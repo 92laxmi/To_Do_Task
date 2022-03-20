@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    width: 100%;
+    background-image:url("ss.jpeg");
+    background-position: scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+
+.wrapper{
+    margin: 120px auto;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: rgba(60, 15, 223, 0.288);
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 1200px;
+    text-align: center;
+    text-transform: uppercase;
+    text-emphasis:inherit;
+
+}
+
+.wrapper.inputfield{
+    display: flex;
+    height: 45px;
+    width: 100%; 
+    margin: 20px 0; 
+
+
+}
+
+.inputfield input{
+    width: 90%;
+    height: 45px;
+    border: 2px solid rgb(20, 23, 218);
+    font-size: 18px;
+    border-radius: 2px;
+    padding-left: 20px;
+    margin-top:10px ;
+    margin-bottom:8px ;
+
+}
+
+
+.inputfield button{
+    width: 38px;
+    height: 3.25em;
+    border:none;
+    outline: none;
+    background-color: rgb(89, 13, 230);
+    color:black;
+    font-size:14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0px ;
+    pointer-events: none;
+}
+
+.inputfield button.active{
+    opacity: 1;
+    pointer-events:auto;
+
+}
+
+
+
+
+
+
+.wrapper.todolist{
+
+}
+
+.todolist li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+    
+}
+
+.todolist li span{
+    position: absolute;
+    right: -45px;
+    color: blue;
+    width: 45px;
+    text-align: center;
+    background-color: rgb(248, 158, 180);
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todolist li:hover span{
+    right: 0px;
+
+}
+
+.wrapper.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+.footer button{
+    width: 90px;
+    height: 2em;
+    border: none;
+    background-color: rgb(89, 13, 230);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+   margin-left: 0%;
+   
+
+
+    
+
+}
+
+.footer span {
+   
+    color: white;
+    
+
+}
